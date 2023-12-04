@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg, rgb(0, 204, 255), rgb(0, 255, 85));
+    height: 100vh;
+}
+
+.box-container {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.box-container img {
+    width: 50px;
+}
+
+.box-container div {
+    position: absolute;
+    transition: transform 1s, opacity 1s;
+    cursor: pointer;
+}
+
+.item {
+    opacity: 0;
+}
+
+.item:hover {
+    scale: 1.1;
+}
+
+.menu > img {
+    background-color: white;
+    border-radius: 50%; 
+}
